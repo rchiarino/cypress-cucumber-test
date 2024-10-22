@@ -22,7 +22,7 @@
             "name": "Im logged in to the homepage \"http://localhost:4200/homepage\"",
             "result": {
               "status": "passed",
-              "duration": 443000000
+              "duration": 218000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Im logged in as \"Estudiante\"",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 9000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I click the \"Log out\" button",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 85000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Im redirected to the landing page at \"http://localhost:4200/landing\"",
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 102000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I can see a \"Log in\" button",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 10000000
             }
           }
         ]

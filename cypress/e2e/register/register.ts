@@ -14,11 +14,11 @@ Then('I should be redirected to {string}', (url) => {
 });
 
 And('I fill the {string} field with {string}', (fieldName, value) => {
-  cy.get(`input[name="${fieldName}"]`).type(value);
+  cy.get(`input[id="${fieldName}"]`).type(value);
 });
 
 When('I click the {string} button', (buttonText) => {
-  cy.contains(buttonText, { matchCase: false }).click();
+  cy.get('button').contains(buttonText, { matchCase: false }).click();
 });
 
 Then('Im redirected to the homepage at {string}', (homepageUrl) => {
@@ -26,5 +26,7 @@ Then('Im redirected to the homepage at {string}', (homepageUrl) => {
 });
 
 And('I can see a {string} button', (buttonText) => {
-  cy.contains(buttonText, { matchCase: false }).should('exist');
+  cy.get('button')
+    .contains(buttonText, { matchCase: false })
+    .should('have.length', 1);
 });
