@@ -1,0 +1,98 @@
+[
+  {
+    "description": "    As a new user\n    I want to register an account\n    So that I can access the homepage",
+    "keyword": "Feature",
+    "name": "Register",
+    "line": 1,
+    "id": "register",
+    "tags": [],
+    "uri": "register.feature",
+    "elements": [
+      {
+        "id": "register;succesful-user-registration",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Succesful user registration",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Im on the landing page \"http://localhost:4200/landing\"",
+            "result": {
+              "status": "passed",
+              "duration": 434000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click the \"Don't have an account?\" link",
+            "result": {
+              "status": "failed",
+              "duration": 4044000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Don't have an account?' but never did.\n    at Context.eval (cypress/e2e/register/register.ts:9:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be redirected to \"http://localhost:4200/register\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I fill the \"Name\" field with \"Estudiante\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill the \"Password\" field with \"123456\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click the \"Register\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Im redirected to the homepage at \"http://localhost:4200/homepage\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I can see a \"Log out\" button",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
